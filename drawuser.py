@@ -17,15 +17,15 @@ if __name__ == "__main__":
 			user
 			for user
 			in os.listdir("/home")
-			if str(user).startswith("a")
-			or str(user).startswith("m")
+			if str(user).startswith("a") # Edit this for filtering student account.
+			or str(user).startswith("m") # Edit this for filtering student account.
 		]
 	current_users = list(set(
 			user.name
 			for user
 			in psutil.users()
-			if str(user.name).startswith("a")
-			or str(user.name).startswith("m")
+			if str(user.name).startswith("a") # Edit this for filtering student account.
+			or str(user.name).startswith("m") # Edit this for filtering student account.
 		))
 	random.shuffle(all_users)
 	
