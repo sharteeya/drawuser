@@ -69,4 +69,7 @@ if __name__ == "__main__":
         else:
             print(f"{RED}OFFLINE")
 
+    """
+    Cleanup the color to prevent text color error on users that don't enable 256 color.
+    """
     print(f"{NC}")
