@@ -59,8 +59,8 @@ if __name__ == "__main__":
     Draw students.
     """
     print(
-            f"{YELLOW}Draw {draw_number} student(s):\n"
-            f"{NC}=============================="
+        f"{YELLOW}Draw {draw_number} student(s):\n"
+        f"{NC}=============================="
     )
     for idx in range(draw_number):
         print(f"{WHITE}No.{idx+1}:\t{all_users[idx].upper()}    ", end="")
